@@ -6,55 +6,103 @@
     <title>富強鑫（FCS）企劃人員需掌握資訊</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f6fa;
+            color: #2d3436;
         }
         .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 20px 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #0056b3;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+            color: #2f54eb;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #dfe4ea;
+            padding-bottom: 15px;
         }
         details {
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            border: 1px solid #e6e9ef;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+        }
+        details[open] {
+            background-color: #ffffff;
         }
         summary {
-            font-weight: bold;
-            font-size: 1.2em;
+            font-weight: 600;
+            font-size: 1.3em;
+            padding: 15px;
             cursor: pointer;
-            padding: 5px;
-            outline: none; /* 移除點擊時的藍色外框 */
+            background-color: #f1f3f5;
+            border-bottom: 1px solid #e6e9ef;
+            transition: background-color 0.2s;
         }
         summary:hover {
-            color: #0056b3;
+            background-color: #e6e9ef;
+            color: #2f54eb;
         }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-top: 10px;
+            list-style-type: none;
+            padding: 0 20px 20px;
+            margin: 0;
         }
         li {
-            margin-bottom: 5px;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #1e3799;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .toggle-btn:hover {
+            background-color: #e6e9ef;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            summary {
+                font-size: 1.1em;
+            }
+            .content {
+                font-size: 0.95em;
+            }
         }
     </style>
 </head>
 <body>
-
 <div class="container">
     <h1>富強鑫（FCS）企劃人員需掌握資訊</h1>
 
@@ -62,35 +110,30 @@
         <summary>公司基本資訊</summary>
         <ul>
             <li>
-                <span class="toggle-btn" data-target="company-history">公司歷史、發展沿革與組織架構，理解企業背景與經營方向。</span>
+                <span class="toggle-btn" data-target="company-history">公司歷史、發展沿革與組織架構，理解企業背景與經營方向</span>
                 <div id="company-history" class="content">
-                    <p>富強鑫成立於1974年，創辦人為王伯壎、王伯祥、王伯豊三兄弟，初始為車床工廠，1978年轉型專注塑膠射出成型機製造。</p>
-                    <p>1991年遷至台南關廟區設立全球營運總部，並在中國東莞、寧波設廠，2004年成為台灣首家且唯一公開發行塑膠射出成型機上櫃公司。</p>
-                    <p>公司秉持「創造高附加價值產品」理念，結合全球化與多元化經營策略，除立足射出機外，跨足纜線、3C光電、材料科技產業。</p>
-                    <p>組織有台灣本部與全球多地銷售與服務據點，涵蓋國家超過28個，銷售據點超過70處，確保全球客戶服務。</p>
+                    <p>富強鑫創立於1974年，由王伯壎、王伯祥、王伯豊三兄弟創辦，初期經營車床工廠，1978年起轉型專注於塑膠射出成型機製造。</p>
+                    <p>1991年遷至台南關廟區，設立全球營運總部，並在中國東莞、寧波設廠。2004年，成為台灣首家公開發行之塑膠射出成型機上櫃公司。</p>
+                    <p>秉持「創造高附加價值產品」理念，採全球化與多元化經營策略，業務涵蓋射出機、纜線、3C光電與材料科技產業。</p>
+                    <p>組織架構包含台灣總部及全球28國、70餘處銷售與服務據點，確保高效客戶服務。</p>
                 </div>
             </li>
-
             <li>
-                <span class="toggle-btn" data-target="company-product">主要產品線（如射出機系列）、技術特色與市場定位。</span>
+                <span class="toggle-btn" data-target="company-product">主要產品線（如射出機系列）、技術特色與市場定位</span>
                 <div id="company-product" class="content">
-                    <p>產品主力包含多種射出機系列，涵蓋油壓伺服節能射出機（如FA系列），鎖模力60~530噸，應用於家用民生、文具、汽車、3C及家電產業。</p>
-                    <p>技術特色包括線性滑軌提高控制精準度，伺服射出全閉迴路確保射出時間穩定性高於99.9%，模組化規格彈性大，模具剛性提升30%，關模速度採用平滑S曲線設計降低震動。</p>
-                    <p>市場定位強調高效節能、精密穩定，適合多元產業需要，如食品包裝、薄壁容器、精密零件等。</p>
+                    <p>主力產品包括油壓伺服節能射出機（如FA系列），鎖模力60~530噸，應用於家用民生、文具、汽車、3C及家電產業。</p>
+                    <p>技術特色包含線性滑軌提升控制精準度，伺服射出全閉迴路確保穩定性達99.9%以上，模組化設計提升模具剛性30%，平滑S曲線關模降低震動。</p>
+                    <p>市場定位聚焦高效節能與精密穩定，滿足食品包裝、薄壁容器及精密零件等多元需求。</p>
                 </div>
             </li>
-
             <li>
-                <span class="toggle-btn" data-target="company-client">主要客戶群與合作夥伴，了解目標市場與銷售結構。</span>
+                <span class="toggle-btn" data-target="company-client">主要客戶群與合作夥伴，了解目標市場與銷售結構</span>
                 <div id="company-client" class="content">
-                    <p>目標市場以汽車產業占最大比重，服務電動車及傳統車廠，3C電子、家電、醫療及運動產業亦是重要客戶。</p>
-                    <p>全球著重國際布局，除台灣總部，還有中國大陸（東莞、寧波）、印度、東南亞（越南、泰國、印尼）、美國、歐洲、中南美洲多個銷售及技術服務據點，形成完整銷售與服務網絡。</p>
-                    <p>以客戶導向為核心，強調與主要客戶及代理商互惠共贏，銷售結構多元且地域廣泛，確保技術與服務本地化。</p>
+                    <p>汽車產業為最大客戶群，服務電動車與傳統車廠，另涵蓋3C電子、家電、醫療與運動產業。</p>
+                    <p>全球布局包括中國大陸（東莞、寧波）、印度、東南亞（越南、泰國、印尼）、美國、歐洲與中南美洲，形成完整銷售與服務網絡。</p>
+                    <p>以客戶導向為核心，與主要客戶及代理商互惠共贏，銷售結構多元，強調技術與服務本地化。</p>
                 </div>
             </li>
-
-
-
         </ul>
     </details>
 
@@ -98,103 +141,125 @@
         <summary>市場與產業環境</summary>
         <ul>
             <li>
-                <span class="toggle-btn" data-target="company-client">產業趨勢與競爭對手分析，包括全球及台灣射出機產業發展狀況。</span>
-                <div id="company-client" class="content">
-                    <p>塑膠射出機產業全球市場近年穩步成長，隨著電子消費品、汽車產業、醫療器械等需求提振，2025年全球射出機市場規模預估超過100億美元，年複合增長率約在3-6%。台灣以富強鑫、震雄、力豐、東台等品牌為主，於全球中高階精密射出機領域具競爭力。中國大陸為最大產地，包括海天、震德等業者，主打性價比；歐、美則以德國阿博格、日本日精、住友、米拉克龍主攻高端機種。</p>
-                    <p>市場競爭愈趨激烈，台灣與中國廠商逐步切入智能機、全電式射出機，加強工藝自動化與數位監控平台；同時歐美日廠商仍以先進技術領先，如多色射出、精密微成型及複合材料應用。</p>
+                <span class="toggle-btn" data-target="market-trend">產業趨勢與競爭對手分析</span>
+                <div id="market-trend" class="content">
+                    <p>全球塑膠射出機市場穩定成長，2025年規模預估超100億美元，年複合增長率約3-6%。台灣以富強鑫、震雄等品牌在中高階精密射出機具競爭力。</p>
+                    <p>中國大陸以海天、震德等業者主打性價比；歐美日則以阿博格、日精、住友等領先高端機種。</p>
+                    <p>競爭趨勢聚焦智能機、全電式射出機及數位監控，歐美日廠商在多色射出、精密微成型技術上具優勢。</p>
                 </div>
             </li>
-
-
             <li>
-                <span class="toggle-btn" data-target="company-client">新興市場機會，如電動車、智慧製造、綠色節能技術等成長動能。</span>
-                <div id="company-client" class="content">
-                    <p>電動車領域：電動車用塑件如電池模組、內裝件、高性能絕緣材料需求大增，推動精密射出機設備升級。
-                       
-                       智慧製造：射出機搭載數位監控、物聯網（IoT）、自動質量追蹤與預防性保養，提升產能及品質，同時減少人力依賴。
-                       
-                       綠色節能技術：節能伺服系統、再生材料射出成型為主流，機台節電效能、二氧化碳減排成為重要競爭指標，配合循環經濟及ESG評比。
-                       
-                       醫療與3C等高精度需求：微型精密塑件、醫療耗材、智慧穿戴等新興應用領域拉升高階射出機市場規模。</p>
-                    <p>市場競爭愈趨激烈，台灣與中國廠商逐步切入智能機、全電式射出機，加強工藝自動化與數位監控平台；同時歐美日廠商仍以先進技術領先，如多色射出、精密微成型及複合材料應用。</p>
+                <span class="toggle-btn" data-target="emerging-market">新興市場機會</span>
+                <div id="emerging-market" class="content">
+                    <p>電動車領域：電池模組、內裝件及高性能絕緣材料需求推動精密射出機升級。</p>
+                    <p>智慧製造：數位監控、物聯網及自動質量追蹤提升產能與品質，降低人力依賴。</p>
+                    <p>綠色節能：伺服系統與再生材料成型技術配合循環經濟及ESG標準，成為競爭焦點。</p>
+                    <p>醫療與3C：微型精密塑件及醫療耗材需求拉動高階射出機市場。</p>
                 </div>
             </li>
-
             <li>
-                <span class="toggle-btn" data-target="company-client">政策法規與國際貿易環境，掌握可能影響營運的外部風險。</span>
-                <div id="company-client" class="content">
-                    <p>台灣與全球主要市場積極制定塑膠減量、循環經濟、碳排放管理等法令，影響塑膠射出產業技術升級及生產規格。</p>
-                    <p>歐盟「碳邊界調整機制（CBAM）」、美中科技競爭、全球供應鏈重組，增加射出機製造與出口難度，要求業者提升環保標準及數位智能化能力。</p>
-                    <p>台灣新南向、與印度、東南亞等新興市場簽署經濟合作協定，成為台灣射出機出口成長的動能，分散單一市場風險。</p>
+                <span class="toggle-btn" data-target="policy-environment">政策法規與國際貿易環境</span>
+                <div id="policy-environment" class="content">
+                    <p>全球塑膠減量、循環經濟及碳排放法規影響技術升級與生產規格。</p>
+                    <p>歐盟碳邊界調整機制（CBAM）、美中科技競爭及供應鏈重組，促使業者提升環保與智能化能力。</p>
+                    <p>台灣新南向政策與印度、東南亞經濟合作協定，促進射出機出口成長，分散市場風險。</p>
                 </div>
             </li>
         </ul>
     </details>
-
 
     <details>
         <summary>業務與銷售狀況</summary>
         <ul>
             <li>
-                <span class="toggle-btn" data-target="company-client">銷售數據與訂單能見度，短中長期市場策略調整依據。</span>
-                <div id="company-client" class="content">
-                    <p>塑膠射出機產業全球市場近年穩步成長，隨著電子消費品、汽車產業、醫療器械等需求提振，2025年全球射出機市場規模預估超過100億美元，年複合增長率約在3-6%。台灣以富強鑫、震雄、力豐、東台等品牌為主，於全球中高階精密射出機領域具競爭力。中國大陸為最大產地，包括海天、震德等業者，主打性價比；歐、美則以德國阿博格、日本日精、住友、米拉克龍主攻高端機種。</p>
-                    <p>市場競爭愈趨激烈，台灣與中國廠商逐步切入智能機、全電式射出機，加強工藝自動化與數位監控平台；同時歐美日廠商仍以先進技術領先，如多色射出、精密微成型及複合材料應用。</p>
+                <span class="toggle-btn" data-target="sales-data">銷售數據與訂單能見度</span>
+                <div id="sales-data" class="content">
+                    <p>2025年在手訂單達35億元新台幣，訂單能見度至2026年第3季，顯示穩定成長。</p>
+                    <p>2025年8月營收約4.67億元，月增43.82%，年增26.97%，累計營收約30.65億元，有望創歷史新高。</p>
+                    <p>訂單主要來自汽車零配件、新能源車零件、運動產業及半導體伺服器設備，特別是新能源車相關多色大型設備需求強勁。</p>
                 </div>
             </li>
-
-
             <li>
-                <span class="toggle-btn" data-target="company-client">新興市場機會，如電動車、智慧製造、綠色節能技術等成長動能。</span>
-                <div id="company-client" class="content">
-                    <p>電動車領域：電動車用塑件如電池模組、內裝件、高性能絕緣材料需求大增，推動精密射出機設備升級。
-                       
-                       智慧製造：射出機搭載數位監控、物聯網（IoT）、自動質量追蹤與預防性保養，提升產能及品質，同時減少人力依賴。
-                       
-                       綠色節能技術：節能伺服系統、再生材料射出成型為主流，機台節電效能、二氧化碳減排成為重要競爭指標，配合循環經濟及ESG評比。
-                       
-                       醫療與3C等高精度需求：微型精密塑件、醫療耗材、智慧穿戴等新興應用領域拉升高階射出機市場規模。</p>
-                    <p>市場競爭愈趨激烈，台灣與中國廠商逐步切入智能機、全電式射出機，加強工藝自動化與數位監控平台；同時歐美日廠商仍以先進技術領先，如多色射出、精密微成型及複合材料應用。</p>
+                <span class="toggle-btn" data-target="customer-demand">客戶結構與需求變化</span>
+                <div id="customer-demand" class="content">
+                    <p>汽車零配件占營收約60%，新能源車龍頭企業需求強，推動多色射出機及大型設備銷售。</p>
+                    <p>半導體、AI伺服器及運動產業對全電機節能機種需求穩定，驅動技術升級與產品多元化。</p>
+                    <p>客戶需求轉向整廠智慧製造方案，重視系統整合與自動化解決方案。</p>
                 </div>
             </li>
-
             <li>
-                <span class="toggle-btn" data-target="company-client">政策法規與國際貿易環境，掌握可能影響營運的外部風險。</span>
-                <div id="company-client" class="content">
-                    <p>台灣與全球主要市場積極制定塑膠減量、循環經濟、碳排放管理等法令，影響塑膠射出產業技術升級及生產規格。</p>
-                    <p>歐盟「碳邊界調整機制（CBAM）」、美中科技競爭、全球供應鏈重組，增加射出機製造與出口難度，要求業者提升環保標準及數位智能化能力。</p>
-                    <p>台灣新南向、與印度、東南亞等新興市場簽署經濟合作協定，成為台灣射出機出口成長的動能，分散單一市場風險。</p>
+                <span class="toggle-btn" data-target="brand-image">品牌形象與客戶滿意度</span>
+                <div id="brand-image" class="content">
+                    <p>富強鑫在雙色射出機領域為市場龍頭，客戶回購率超80%，展現品牌信賴與忠誠度。</p>
+                    <p>品牌強調快速響應、客戶至上及差異化服務，透過展會宣傳與高品質售後服務提升滿意度。</p>
+                    <p>連續獲得2021、2022年射出機卓越影響力品牌獎，強化市場地位。</p>
                 </div>
             </li>
         </ul>
     </details>
 
-
-
     <details>
         <summary>財務與經營績效</summary>
         <ul>
             <li>
-                <span class="toggle-btn" data-target="company-finance-analysis">營收、利潤、現金流等核心財務指標與分析。</span>
-                <div id="company-finance-analysis" class="content">
-                    <p>2025年上半年累計營收約22.73億元，全年累計營收約30.65億元，較去年同期成長約3.96%至5.09%，營收呈穩健成長趨勢。</p>
-                    <p>單季毛利率約24.35%-24.63%，但2025年第二季稅後淨利率因匯率波動等外部因素影響，出現輕微虧損，稅後淨損約888萬元，每股虧損0.05元；上半年稅後淨損約552萬元，每股虧損0.03元。</p>
-                    <p>2025年第1季及第2季營業現金流呈負值，自由現金流亦為負，顯示公司正處於策略性擴張階段，資本投入大於營運現金流入。</p>
-                    <p>財務比率方面，2025年第二季負債比約69.7%，營業利益率約2.3%左右，顯示短期利潤承壓但經營規模與資產負債結構仍維持相對穩定。</p>
+                <span class="toggle-btn" data-target="finance-analysis">核心財務指標與分析</span>
+                <div id="finance-analysis" class="content">
+                    <p>2025年上半年營收約22.73億元，全年累計約30.65億元，年增3.96%-5.09%，呈穩健成長。</p>
+                    <p>毛利率約24.35%-24.63%，但第二季因匯率波動稅後淨損約888萬元，每股虧損0.05元；上半年稅後淨損約552萬元，每股虧損0.03元。</p>
+                    <p>第一、二季營業現金流與自由現金流為負，顯示公司處於策略性擴張階段，資本投入較大。</p>
+                    <p>第二季負債比約69.7%，營業利益率約2.3%，財務結構穩定但短期利潤承壓。</p>
                 </div>
             </li>
             <li>
-                <span class="toggle-btn" data-target="company-investment-plan">投資計畫與資本支出，評估資源配置與業務擴張可行性。</span>
-                <div id="company-investment-plan" class="content">
-                    <p>公司積極推動AI智慧製造與節能減碳技術，資本支出聚焦於第二代全電式節能機種與多色大型機種的研發與製造能力提升。</p>
-                    <p>策略性接單方案持續推進整廠智慧製造解決方案，涵蓋智慧射出成型設備整合與客戶製造流程升級，相關建廠與擴產投資動能強勁。</p>
-                    <p>資本支出主要用於自動化設備提升、製程優化及新產品線建置，單季資本支出約1,400多萬台幣。</p>
-                    <p>公司持續強化全球銷售與服務據點建設，以提升新興市場交期及服務能力，保障國際布局拓展的持續性。</p>
+                <span class="toggle-btn" data-target="investment-plan">投資計畫與資本支出</span>
+                <div id="investment-plan" class="content">
+                    <p>資本支出聚焦AI智慧製造與節能減碳技術，研發第二代全電式節能機種與多色大型機。</p>
+                    <p>推動整廠智慧製造解決方案，涵蓋設備整合與客戶製造流程升級，建廠與擴產投資動能強。</p>
+                    <p>單季資本支出約1,400萬台幣，主要用於自動化設備、製程優化及新產品線建置。</p>
+                    <p>強化全球銷售與服務據點，提升新興市場交期與服務能力。</p>
+                </div>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>研發與創新</summary>
+        <ul>
+            <li>
+                <span class="toggle-btn" data-target="R&D-innovation">技術研發與產品創新</span>
+                <div id="R&D-innovation" class="content">
+                    <p>秉持「簡明、精準、快速、耐用、穩定、潔淨、省電」理念，研發目標為提供整體解決方案，涵蓋塑膠材料、成型設備及後端加工。</p>
+                    <p>推動多組分射出技術，向大型化與電動化發展，配合汽車電動化與綠色節能趨勢。</p>
+                    <p>聚焦第二代全電式節能機與多色大型機，提升射出精度、節能效率及模組化設計。</p>
+                </div>
+            </li>
+            <li>
+                <span class="toggle-btn" data-target="technology-application">新技術與智慧製造應用</span>
+                <div id="technology-application" class="content">
+                    <p>導入「iMF 4.0智慧製造工廠系統」，結合AI參數監控與工業物聯網，提升生產效率與品質追蹤。</p>
+                    <p>智慧製造方案應用於汽車零件、ICT半導體及運動用品產業，助力降低成本與碳排放。</p>
+                    <p>透過全球展會展示智慧製造與節能設備，強化東南亞及印度市場服務網絡。</p>
                 </div>
             </li>
         </ul>
     </details>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+                if (targetContent) {
+                    const isVisible = targetContent.style.display === 'block';
+                    targetContent.style.display = isVisible ? 'none' : 'block';
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
