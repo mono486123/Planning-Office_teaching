@@ -29,6 +29,13 @@
             border-bottom: 3px solid #dfe4ea;
             padding-bottom: 15px;
         }
+        h2 {
+            color: #2f54eb;
+            font-size: 1.8em;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #dfe4ea;
+            padding-bottom: 10px;
+        }
         details {
             margin-bottom: 20px;
             border: 1px solid #e6e9ef;
@@ -86,6 +93,25 @@
         .content p {
             margin: 10px 0;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #dfe4ea;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #f1f3f5;
+            font-weight: 600;
+            color: #2f54eb;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -93,11 +119,18 @@
             h1 {
                 font-size: 1.8em;
             }
+            h2 {
+                font-size: 1.5em;
+            }
             summary {
                 font-size: 1.1em;
             }
             .content {
                 font-size: 0.95em;
+            }
+            th, td {
+                font-size: 0.9em;
+                padding: 8px;
             }
         }
     </style>
@@ -244,6 +277,112 @@
         </ul>
     </details>
 </div>
+    <h2>射出機型規格表</h2>
+    <table>
+        <tr>
+            <th>機型系列</th>
+            <th>鎖模力範圍</th>
+            <th>介紹</th>
+            <th>應用產業</th>
+        </tr>
+        <tr>
+            <td>FA 系列</td>
+            <td>60 ~ 530 噸</td>
+            <td>標準曲肘油壓伺服節能射出機，適用於家電、3C、文具、汽車及民生用品，特別是印表機與電腦週邊產品。</td>
+            <td>導光條、光碟盒、果汁機外殼、行動電源外殼、工業安全鏡片、文具、鍋鏟/湯勺、窗簾配件</td>
+        </tr>
+        <tr>
+            <td>SA 系列</td>
+            <td>100 ~ 3,200 噸</td>
+            <td>外曲肘油壓伺服節能射出機，適合家電、3C、汽車與深桶型產品。</td>
+            <td>果汁機外殼、冷水壺、PVC 球閥、PVC 管道連接件、溜冰鞋、辦公椅腳、鍋鏟/湯勺</td>
+        </tr>
+        <tr>
+            <td>SA-h PET 系列</td>
+            <td>220 ~ 290 噸</td>
+            <td>專用於 PET 採血管、檢驗試管與醫療耗材。</td>
+            <td>PET 採血管、檢驗試管、針筒</td>
+        </tr>
+        <tr>
+            <td>SA-h 系列</td>
+            <td>170 ~ 600 噸</td>
+            <td>專用於食品包裝、薄壁產品。</td>
+            <td>IML 酸奶杯、IML 巧克力桶、拋棄式餐具、航空杯、外帶餐盒</td>
+        </tr>
+        <tr>
+            <td>SA-p 系列</td>
+            <td>220 ~ 1,000 噸</td>
+            <td>適合大型桶裝容器。</td>
+            <td>油漆桶、IML 巧克力桶</td>
+        </tr>
+        <tr>
+            <td>LM / LN 系列</td>
+            <td>500 ~ 4,000 噸</td>
+            <td>適合大型塑件如汽車保險桿、儀表板、棧板等。</td>
+            <td>保險桿、車門內飾板、交通錐、冰箱層板、洗衣機內槽、塑膠棧板</td>
+        </tr>
+        <tr>
+            <td>HT-P 系列</td>
+            <td>200 ~ 750 噸</td>
+            <td>適合各種 PET 瓶胚，如水瓶、果汁瓶、油瓶、化妝品瓶。</td>
+            <td>PET 瓶胚（礦泉水瓶、廣口瓶、5 加侖瓶）</td>
+        </tr>
+        <tr>
+            <td>HT 系列</td>
+            <td>100 ~ 1,600 噸</td>
+            <td>標準常規型，適用於五金、3C、家電與汽車部件。</td>
+            <td>安全帽、瓶蓋、光碟盒、護目鏡、PVC 球閥、汽車內飾板</td>
+        </tr>
+        <tr>
+            <td>CT-R 系列</td>
+            <td>180 ~ 400 噸</td>
+            <td>全電式雙色射出機，適合雙色或多色醫療、電子、化妝品產品。</td>
+            <td>雙色氧氣面罩、雙色化妝品容器、電子菸、雙色保鮮盒</td>
+        </tr>
+        <tr>
+            <td>FB-R 系列（小型）</td>
+            <td>160 ~ 1,900 噸</td>
+            <td>轉盤式雙色射出機，適合小型雙色產品。</td>
+            <td>雙色車尾燈、雙色桶蓋、雙色配電盒、工具握柄、雙色 O-Ring</td>
+        </tr>
+        <tr>
+            <td>FB-R 系列（大型）</td>
+            <td>350 ~ 3,500 噸</td>
+            <td>轉盤式雙色射出機，適合大型汽車零件與家電面板。</td>
+            <td>雙色/三色車尾燈、大型棧板、汽車天窗、家電面板</td>
+        </tr>
+        <tr>
+            <td>FB-T 系列</td>
+            <td>160 ~ 600 噸</td>
+            <td>轉軸式雙色射出機，模具旋轉板可 180° 轉動。</td>
+            <td>工具握柄、按鍵、包覆件</td>
+        </tr>
+        <tr>
+            <td>FB-C 系列</td>
+            <td>100 ~ 470 噸</td>
+            <td>夾層/混色射出機，可一次成型混色產品。</td>
+            <td>混色水桶、混色椅、自行車踏板、混色梳</td>
+        </tr>
+        <tr>
+            <td>HB-R 系列</td>
+            <td>350 ~ 3,500 噸</td>
+            <td>大型水平轉盤雙色射出機，支援疊層模。</td>
+            <td>雙色/三色車尾燈、大型棧板、汽車零件、家電面板</td>
+        </tr>
+        <tr>
+            <td>BMC 系列</td>
+            <td>150 ~ 600 噸</td>
+            <td>專用於 BMC 材料，單缸油壓自動供料。</td>
+            <td>變電器外殼</td>
+        </tr>
+        <tr>
+            <td>HN-U 系列</td>
+            <td>125 ~ 530 噸</td>
+            <td>適用熱固性與熱可塑性材料，支援拔心與轉牙模具。</td>
+            <td>電器零件、器具把手</td>
+        </tr>
+    </table>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -261,5 +400,6 @@
         });
     });
 </script>
+
 </body>
 </html>
